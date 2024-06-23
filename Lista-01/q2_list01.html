@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão 02, lista 01</title>
+    <script>
+/* Faça um algoritmo que solicite do usuário três valores e calcule a média das notas de um aluno:
+Imprima as três notas (Ex. A primeira nota foi 8, a segunda foi ....)
+Imprima a média (Ex. A média do aluno é 7)*/
+        function funcao1 (){
+        var n1 = parseFloat(prompt('Digite a primeira nota:'))
+        document.write("a primeira nota é: " + n1)
+        document.write ("<hr>")
+        var n2 = parseFloat(prompt('Digite a segunda nota:'))
+        document.write("a segunda nota é: " + n2)
+        document.write ("<hr>")
+        var n3 = parseFloat(prompt('Digite a terceira nota:'))
+        document.write("a terceira nota é: " + n3)
+        document.write ("<hr>")
+        var media = (n1 + n2 + n3) / 3
+        document.write("a média é: " + media)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="funcao1()" value="exibir alert" />
+</body>
+</html>
