@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 06, lista 01</title>
+    <script>
+    /* Faça um programa que leia o nome do usuário, a idade do usuário, o nome da mãe do usuário,
+    a idade da mãe do usuário, o nome do pai do usuário e a idade do pai do usuário. O programa
+    devera imprimir na tela quantos anos a mãe e o pai do usuário tinha quando ele nasceu. A
+    resposta deve ter o formato deste exemplo: “Carlos, quando você nasceu, Dona Cecilia tinha 27 anos e Seu Paulo tinha 32 anos”.*/
+    function funcao1() {
+        var nomeuser = prompt("digite seu nome:")
+        var iduser = parseInt(prompt("digite sua idade:"))
+        var nomemae = prompt("digite o nome da sua mãe:")
+        var idmae = parseInt(prompt("digite a idade da sua mãe:"))
+        var nomepai = prompt("digite o nome da seu pai:")
+        var idpai = parseInt(prompt("digite a idade do seu pai:"))
+        var idnasmae = idmae - iduser
+        var idnaspai = idpai - iduser
+        document.write(nomeuser + ", quando você nasceu, Dona " + nomemae + " tinha " + idnasmae + " anos e Seu " + nomepai + " tinha " + idnaspai + " anos")
+    }
+    </script>
+</head>
+<body>
+    <input type="button" onclick = "funcao1 ()" value="exibir alert" />
+</body>
+</html>

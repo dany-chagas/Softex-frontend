@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 08, lista 01</title>
+    <script>
+/*Uma organização resolveu dar um aumento de salário aos seus colaboradores e lhe contratam
+para desenvolver o programa que calculará os reajustes. Faça um programa que recebe o
+salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+Salários até R$ 280,00 (incluindo): aumento de 20%; Salários entre R$ 280,00 e R$ 700,00: aumento de 15%;
+Salários entre R$ 700,00 e R$ 1500,00: aumento de 10%; Salários de R$ 1500,00 em diante: aumento de 5% 
+Após o aumento ser realizado, informe na tela: O percentual de aumento aplicado;
+O valor do aumento; O novo salário, após o aumento.*/
+            function funcao1() {
+                var salario = parseFloat(prompt("Digite o salário atual do funcionário:"))
+                if (salario >= 1.00 && salario <= 280.00) {
+                    var per1 = salario * (20 / 100)
+                    var sal1 = salario + per1
+                    document.write("O salário teve aumento de 20%, o que equivale a R$ " + per1 + ",00. Dessa forma, o novo salário será: R$ " + sal1 + ",00")
+                } else if (280.00 <= salario && salario < 700.00) {
+                    var per1 = salario * (15 / 100)
+                    var sal1 = salario + per1
+                    document.write("O salário teve aumento de 15%, o que equivale a R$ " + per1 + ",00. Dessa forma, o novo salário será: R$ " + sal1 + ",00")
+                } else if (700.00 <= salario && salario < 1500.00) {
+                    var per1 = salario * (10 / 100)
+                    var sal1 = salario + per1
+                    document.write("O salário teve aumento de 10%, o que equivale a R$ " + per1 + ",00. Dessa forma, o novo salário será: R$ " + sal1 + ",00")
+                } else if (salario >= 1500.00) {
+                    var per1 = salario * (5 / 100)
+                    var sal1 = salario + per1
+                    document.write("O salário teve aumento de 5%, o que equivale a R$ " + per1 + ",00. Dessa forma, o novo salário será: R$ " + sal1 + ",00")
+                } else {
+                    document.write("Salário inválido")
+                }
+            }
+        
+    </script>
+    
+</head>
+<body>
+    <input type = "button" onclick = "funcao1 ()" value = "exibir alert" />
+</body>
+</html>

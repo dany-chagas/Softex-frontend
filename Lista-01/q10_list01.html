@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 10, lista 01</title>
+    <script>
+        /* Faça um programa que peça dois números ao usuário e mostre qual o maior e qual o menor.*/
+        function funcao1() {
+                var v1 = parseFloat(prompt("informe o primeiro número"))
+                var v2 = parseFloat(prompt("informe o segundo número"))
+                if (v1 > v2) {
+                    document.write("O primeiro número, " + v1 + ", é maior do que o segundo, " + v2)
+                } else if (v2 > v1) {
+                    document.write("O segundo número, " + v2 + ", é maior do que o primeiro, " + v1)
+                } else {
+                    document.write("Os números são iguais")
+                }
+        }
+    </script>
+</head>
+<body>
+    <input type = "button" onclick = "funcao1 ()" value = "exibir alert" />
+</body>
+</html>

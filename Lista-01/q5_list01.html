@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>questão 05, lista 01</title>
+    <script>
+/*Dada as seguintes entradas: quilometragem inicial, quilometragem final, litros consumidos,
+preço do litro de combustível. Faça um programa que imprima o seguinte Relatório: distância
+percorrida, Valor total gasto e o consumo do carro (quantos quilômetros percorre com 1 litro
+de combustível).*/
+            function funcao1() {
+                var kmI = parseFloat(prompt("digite a quilometragem inicial:"))
+                var kmF = parseFloat(prompt("digite a quilometragem final:"))
+                var Lcons = parseFloat(prompt("digite quantos litros foi consumido:"))
+                var Lval = parseFloat(prompt("Quanto custa o litro do combustível?"))
+                var dist = kmF - kmI
+                var valcons = Lval * Lcons
+                var conscar = dist / Lcons
+                document.write("Olá, a distância percorrida foi de " + dist + "km, e foi gasto um total de R$ " + valcons + ", o carro fez um total de " + conscar + "KM/L")
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type = "button" onclick = "funcao1 ()" value="exibir alert" />
+    </body>
+    
+    </html>

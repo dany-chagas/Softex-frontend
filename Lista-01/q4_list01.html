@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão 04, lista 01</title>
+    <script>
+/*Uma empresa vai dar um aumento de salário ao seu funcionário. Faça um programa para ler o
+salário do funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.*/
+            function funcao1() {
+                var salario = parseFloat(prompt("Digite o salário atual do funcionário:"))
+                var per = parseFloat(prompt("Digite a porcentagem de reajuste do salário do funcionário:"))
+                var valper = salario * (per / 100)
+                var newsal = salario + valper
+                document.write("O novo salário do funcionário será R$ " + newsal)
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="button" onclick="funcao1()" value="exibir alert" />
+    </body>
+    
+    </html>

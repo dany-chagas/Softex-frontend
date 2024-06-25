@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 12, lista 01</title>
+    <script>
+        /* Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor.*/
+        function funcao1() {
+            var v1 = parseInt(prompt("informe o primeiro número"))
+            var v2 = parseInt(prompt("informe o segundo número"))
+            var v3 = parseInt(prompt("informe o terceiro número"))
+            
+            if (v1 > v2 && v1 > v3) {
+                document.write("O primeiro número, " + v1 + ", é maior do que o segundo e o terceiro, " + v2 + ", " + v3)
+            } else if (v2 > v1 && v2 > v3) {
+                document.write("O segundo número, " + v2 + ", é maior do que o primeiro e o terceiro, " + v1 + ", " + v3)
+            } else if (v3 > v1 && v3 > v2) {
+                document.write("O terceiro número, " + v3 + ", é maior do que o primeiro e o segundo, " + v1 + ", " + v2)
+            } else {
+                document.write("Os números são iguais")
+            }
+        }
+    </script>
+    </head>
+    
+    <body>
+        <input type="button" onclick="funcao1 ()" value="exibir alert" />
+    </body>
+    
+    </html>

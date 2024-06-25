@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 07, lista 01</title>
+    <script>
+        /* Faça um programa que leia as três notas do aluno e calcula a sua média e a sua situação
+        (aprovado por média, prova final ou reprovado direto). A média é calculada da seguinte
+        forma: descarta a menor nota e a média é calculada usando as duas maiores notas. A situação
+        do aluno depende da sua média e é apresentada na tabela abaixo: */
+        function funcao1() {
+            var n1 = parseFloat(prompt("Digite sua primeira nota:"))
+            var n2 = parseFloat(prompt("Digite sua segunda nota:"))
+            var n3 = parseFloat(prompt("Digite sua terceira nota:"))
+            var media = (n1 + n2 + n3) / 3
+
+            if (media >= 7.0) {
+                document.write("Aprovado por média")
+            } else if (3.0 <= media) {
+                document.write("Prova final")
+            } else {
+                document.write("Reprovado direto")
+            }
+        }
+    </script>
+    </head>
+    
+    <body>
+        <input type="button" onclick="funcao1 ()" value="exibir alert" />
+    </body>
+    
+    </html>
