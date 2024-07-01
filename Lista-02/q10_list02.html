@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 10, lista 02</title>
+    <script>
+/* Crie um programa que o usuário digite dois números inteiros e positivos. Em
+seguida calcule Z, onde Z é: Z = X² + Y²*/
+        function funcao1 (){
+            var x = parseInt(prompt("Digite o primeiro número:"))
+            var y = parseInt(prompt("Digite o segundo número:"))
+            var z = (x * x) + (y * y)
+            document.write("Z = " + x + "² + " + y + "²")
+            document.write("<hr>")
+            document.write("Z = "+z)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="funcao1()" value="exibir alert" />
+</body>
+</html>

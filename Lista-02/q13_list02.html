@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 13, lista 02</title>
+    <script>
+/* Escreva uma função que solicita o usuário digitar um número de 1 à 7. Em seguida
+a função imprime uma mensagem com o dia da semana de acordo o número
+digitado: (use Switch case).*/
+            function funcao1() {
+                var dia = parseInt(prompt('Digite um número do dia desejado:'));
+                switch (dia) {
+                    case 1:
+                        alert('domingo')
+                        break
+                    case 2:
+                        alert('segunda')
+                        break
+                    case 3:
+                        alert('terça')
+                        break
+                    case 4:
+                        alert('quarta')
+                        break
+                    case 5:
+                        alert('quinta')
+                        break
+                    case 6:
+                        alert('sexta')
+                        break
+                    case 7:
+                        alert('sábado')
+                        break
+                    default:
+                        alert('dia inexistente')
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="button" onclick="funcao1()" value="exibir alert" />
+    </body>
+    
+    </html>

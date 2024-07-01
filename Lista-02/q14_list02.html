@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 14, lista 02</title>
+    <script>
+        /*Como ficaria o algoritmo para calcular a media dos 50 alunos usando
+        repetição fixa?*/
+        function funcao1() {
+            var soma = 0
+            var cont = 1
+            while (cont <= 50) {
+                var nota = parseFloat(prompt("digite a nota:"))
+                soma += nota
+                cont++
+            }
+            var media = soma / 50
+            document.write("a media é: " + media)
+        }
+    </script>
+    </head>
+    
+    <body>
+        <input type="button" onclick="funcao1()" value="exibir alert" />
+    </body>
+    
+    </html>

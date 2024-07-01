@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>questão 01, lista 02</title>
     <script>
-/* Faça um algoritmo que leia o espaço percorrido por um automóvel (em metros), o
-tempo gasto para percorrê-lo (em segundos), e escreva a velocidade utilizada (V=S/T).*/
-        function funcao1 (){
-var kmi = parseFloat(prompt("digite a quilometragem inicial:"))
-var kmf = parseFloat(prompt("digite a quilometragem final:"))
-var ti = parseFloat(prompt("digite a hora de partida:"))
-var tf = parseFloat(prompt("digite a hora de chegada:"))
+        /* Faça um algoritmo que leia o espaço percorrido por um automóvel (em metros), o
+        tempo gasto para percorrê-lo (em segundos), e escreva a velocidade utilizada (V=S/T).*/
+        function funcao1() {
+            var kmi = parseFloat(prompt("digite a quilometragem inicial:"))
+            var kmf = parseFloat(prompt("digite a quilometragem final:"))
+            var ti = parseFloat(prompt("digite a hora de partida:"))
+            var tf = parseFloat(prompt("digite a hora de chegada:"))
 
-var vel = (kmf - kmi) / (tf - ti)
-var velconvert = vel / 3.6
-document.write("A velocidade percorrida foi: " + velconvert + "m/s")
+            var vel = (kmf - kmi) / (tf - ti)
+            var velconvert = vel / 3.6
+            document.write("A velocidade percorrida foi: " + velconvert + "m/s")
         }
     </script>
 </head>
+
 <body>
     <input type="button" onclick="funcao1()" value="exibir alert" />
 </body>
+
 </html>

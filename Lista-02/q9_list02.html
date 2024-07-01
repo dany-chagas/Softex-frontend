@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 09, lista 02</title>
+    <script>
+/* Um motorista deseja colocar no seu tanque X litros de gasolina. Escreva um
+algoritmo para ler o preço do litro da gasolina e o valor do pagamento, e exibir
+quantos litros ele conseguiu colocar no tanque.*/
+        function funcao1 (){
+            var valG = parseFloat(prompt("Digite o valor do litro da gasolina:"))
+            var pag = parseFloat(prompt("Digite o valor que você deseja pagar:"))
+            var ltanq = pag/valG
+            document.write("Você poderá colocar " + ltanq + " L")
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="funcao1()" value="exibir alert" />
+</body>
+</html>

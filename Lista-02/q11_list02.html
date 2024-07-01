@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 11, lista 02</title>
+    <script>
+/* Escreva um programa que leia 3 números inteiros distintos e os imprima em ordem
+crescente.*/
+        function funcao1 (){
+            var x = parseInt(prompt("Digite o primeiro número:"))
+            var y = parseInt(prompt("Digite o segundo número:"))
+            var z = parseInt(prompt("Digite o terceiro número:"))
+        if (x<y && x<z && y<z){
+            document.write("A ordem é: " + x + "," + y + "," + z)
+        } else if (x<y && x<z && z<y){
+            document.write("A ordem é: " + x + "," + z + "," + y)
+        } else if (y<x && y<z && z<x){
+            document.write("A ordem é: " + y + "," + z + "," + x)
+        } else if (y<x && y<z && x<z){
+            document.write("A ordem é: " + y + "," + x + "," + z)
+        } else if (z<x && z<y && y<x){
+            document.write("A ordem é: " + z + "," + y + "," + x)
+        } else if (z<x && z<y && x<y){
+            document.write("A ordem é: " + z + "," + x + "," + y)
+        } else {
+            document.write("As repostas informadas possuem números iguais")
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="funcao1()" value="exibir alert" />
+</body>
+</html>

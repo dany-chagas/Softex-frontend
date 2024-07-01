@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>questão 01, lista 02</title>
+    <title>questão 03, lista 02</title>
     <script>
-        function funcao1 (){
-            
+        /*Faça um algoritmo que leia o nome e a idade de uma nadador e escreva a categoria
+        a qual pertence de acordo com a tabela abaixo:*/
+        function funcao1() {
+            var nome = prompt("digite seu nome:")
+            var idade = parseInt(prompt("digite sua idade:"))
+
+            if (idade >= 5 && idade <= 7) {
+                document.write("Olá nadador(a) " + nome + ", sua categoria é Infantil A")
+            } else if (idade >= 8 && idade <= 10) {
+                document.write("Olá nadador(a) " + nome + ", sua categoria é Infantil B")
+            } else if (idade >= 11 && idade <= 13) {
+                document.write("Olá nadador(a) " + nome + ", sua categoria é Juvenil A")
+            } else if (idade >= 14 && idade <= 17) {
+                document.write("Olá nadador(a) " + nome + ", sua categoria é Juvenil B")
+            } else if (idade >= 18) {
+                document.write("Olá nadador(a) " + nome + ", sua categoria é Sênior")
+            } else {
+                document.write("idade inválida")
+            }
         }
     </script>
 </head>
+
 <body>
     <input type="button" onclick="funcao1()" value="exibir alert" />
 </body>
+
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>questão 08, lista 02</title>
+    <script>
+/* Escreva um algoritmo para ler o nome e a idade de uma pessoa, e exibir quantos
+dias de vida ela possui. Considere sempre anos completos, e que um ano possui 365 dias.*/
+        function funcao1 (){
+            var nome = prompt("digite seu nome:")
+            var idade = parseInt(prompt("digite sua idade:"))
+            var diasv = idade * 365
+            document.write("Parabéns " + nome + ", você já viveu "+ diasv + " dias!")
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="funcao1()" value="exibir alert" />
+</body>
+</html>
